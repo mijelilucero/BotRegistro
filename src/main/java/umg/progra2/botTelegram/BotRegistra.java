@@ -18,12 +18,13 @@ public class BotRegistra  extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "@nalulu_bot";
+        return "@MiloMind_bot";
     }
+
 
     @Override
     public String getBotToken() {
-        return "7224401127:AAH9OABtXY4jJU7OYbu5UEQ-_wBLvZpf8NE";
+        return "7400553095:AAFQjfYLT-k9jsl2t-lU3OQrYABu9VA4DSU";
     }
 
 
@@ -42,7 +43,7 @@ public class BotRegistra  extends TelegramLongPollingBot {
             String state = estadoConversacion.getOrDefault(chat_id, "");
             usuarioConectado = userService.getUserByTelegramId(chat_id);
 
-            // Verificación inicial del usuario, si usuarioConectado es nullo, significa que no tiene registro de su id de telegram en la tabla
+            // Verificación inicial del usuario, si usuarioConectado es nulo, significa que no tiene registro de su id de telegram en la tabla
             if (usuarioConectado == null && state.isEmpty()) {
                 sendText(chat_id, "Hola " + formatUserInfo(userFirstName, userLastName, nickName) + ", no tienes un usuario registrado en el sistema. Por favor ingresa tu correo electrónico:");
                 estadoConversacion.put(chat_id, "ESPERANDO_CORREO");

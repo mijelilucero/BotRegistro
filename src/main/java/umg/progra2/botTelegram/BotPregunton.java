@@ -21,12 +21,13 @@ public class BotPregunton extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return " @umg_sistemas_bot";
+        return "@MiloMind_bot";
     }
+
 
     @Override
     public String getBotToken() {
-        return "1662498791:AAFgEfNhzC7gqWmZzytDQU8QIX143PjGRw8";
+        return "7400553095:AAFQjfYLT-k9jsl2t-lU3OQrYABu9VA4DSU";
     }
 
 
